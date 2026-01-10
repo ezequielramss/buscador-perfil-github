@@ -28,16 +28,39 @@ btnSearch.addEventListener('click', async () => {
                 <h2>${userData.name}</h2>
                 <p>${userData.bio || 'Não possui bio cadastrada 😢.'}</p>
             </div>
-        </div>`;
-
-    } catch (error) {
+        </div> 
+        
+        <div class="profile-counters">
+          <div class="followers">
+          <h4>👥 Seguidores</h4>
+          <span>${userData.followers}</span>
+        </div>
+          <div class="following">
+            <h4>👥 Seguindo</h4>
+            <span>${userData.following}</span>
+          div>
+        </div>
+        `;
+      } catch (error) {
         console.error('Erro ao buscar o perfil do usuário:', error);
-        alert('Ocorreu um erro ao buscar o perfil do usuário. Por favor, tente novamente mais tarde.');
-        profileResults.innerHTML = "";
-    }
+      alert('Ocorreu um erro ao buscar o perfil do usuário. Por favor, tente novamrntr mais tarde.')
+      profileResults.innerHTML = "";
+       }
 
+       
   } else {
     alert('Por favor, digite um nome de usuário do GitHub.');
     profileResults.innerHTML = "";
   }
 });
+
+        <div class="profile-counters">
+          <div class="folowers">
+            <h4>Seguidores</h4>
+            <span>${userData.followers}</span>
+          </div>
+          <div class="following">
+            <h4>Seguindo</h4>
+            <span>${userData.following}</span>
+          </div>
+          </div>

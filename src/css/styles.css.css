@@ -185,3 +185,20 @@ main {
   font-weight: 500;
   margin-top: var(--spacing-xl);
 }
+
+.profile-counters {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.profile-counters h4 {
+  font-weight: normal;
+  font-size: 0.75rem;
+  margin-bottom: 8px
+}
+
+.profile-counters span{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
